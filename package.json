@@ -1,0 +1,30 @@
+{
+  "name": "estimator",
+  "version": "1.0.0",
+  "description": "Estimate your tasks more precisely!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhibirc/Estimator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhibirc/Estimator/issues"
+  },
+  "homepage": "https://github.com/zhibirc/Estimator#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
