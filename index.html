@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="src/css/main.css">
 </head>
 <body>
-<div class="field">
-    <label class="label" for="optimistic-mark">Optimistic mark:</label>
-    <div class="control">
-        <input class="input is-large is-success" id="optimistic-mark" placeholder="enter value...">
-    </div>
-</div>
+<div class="columns">
+    <div class="column"></div>
+    <div class="column is-half">
+        <div class="field">
+            <label class="label" for="optimistic-mark">Optimistic mark:</label>
+            <div class="control">
+                <input class="input is-large is-success" id="optimistic-mark" placeholder="enter value...">
+            </div>
+        </div>
 
-<div class="field">
-    <label class="label" for="normal-mark">Normal mark:</label>
-    <div class="control">
-        <input class="input is-large is-warning" id="normal-mark" placeholder="enter value...">
-    </div>
-</div>
+        <div class="field">
+            <label class="label" for="normal-mark">Normal mark:</label>
+            <div class="control">
+                <input class="input is-large is-warning" id="normal-mark" placeholder="enter value...">
+            </div>
+        </div>
 
-<div class="field">
-    <label class="label" for="pessimistic-mark">Pessimistic mark:</label>
-    <div class="control">
-        <input class="input is-large is-danger" id="pessimistic-mark" placeholder="enter value...">
-    </div>
-</div>
+        <div class="field">
+            <label class="label" for="pessimistic-mark">Pessimistic mark:</label>
+            <div class="control">
+                <input class="input is-large is-danger" id="pessimistic-mark" placeholder="enter value...">
+            </div>
+        </div>
 
-<button class="button is-large is-primary" id="estimate">Estimate!</button>
-<div id="result"></div>
+        <button class="button is-large is-primary" id="estimate">Estimate!</button>
+        <div id="result"></div>
+    </div>
+    <div class="column"></div>
+</div>
 
 <script src="src/js/main.js"></script>
 </body>
