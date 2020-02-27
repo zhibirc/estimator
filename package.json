@@ -1,11 +1,12 @@
 {
     "name": "estimator",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Estimate your tasks more precisely!",
     "author": {
         "name": "Yaroslav Surilov",
         "email": ""
     },
+    "private": true,
     "repository": {
         "type": "git",
         "url": "https://github.com/zhibirc/estimator.git"
@@ -14,11 +15,11 @@
         "url": "https://github.com/zhibirc/estimator/issues"
     },
     "homepage": "https://zhibirc.github.io/estimator/",
-    "main": "index.html",
     "scripts": {
         "lint": "eslint .",
         "mocha": "node ./tests/main.js",
-        "test": "npm run mocha && npm run lint"
+        "test": "npm run mocha && npm run lint",
+        "build": "webpack"
     },
     "dependencies": {
         "bulma": "^0.7.1"
@@ -27,7 +28,9 @@
         "cjs-eslint": "^1.1.2",
         "eslint": "^5.5.0",
         "mocha": "^5.2.0",
-        "should": "^13.2.3"
+        "should": "^13.2.3",
+        "webpack": "^4.41.6",
+        "webpack-cli": "^3.3.11"
     },
     "keywords": [],
     "license": "MIT"
