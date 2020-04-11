@@ -1,0 +1,41 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html, body, div {
+    border:  0;
+    margin:  0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: rgb(43, 98, 43);
+    background: linear-gradient(0deg, rgba(43, 98, 43, 0.8071429255295868) 0%, rgba(58, 153, 67, 0.6894958667060574) 35%, rgba(96, 201, 96, 0.46260511040353647) 100%);
+}
+
+.container {
+    padding: 10px;
+    width: 200px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    background: #9abf7f;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px 10px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+
+.help-tooltip {
+    font-weight: bold;
+}

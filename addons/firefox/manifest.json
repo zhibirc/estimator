@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "estimator",
-    "description": "Estimate your tasks more precisely!",
+    "name": "time-estimator",
+    "description": "Estimate time for your tasks more precisely!",
     "version": "1.0.0",
     "icons": {
         "64": "icons/icon.png"
@@ -11,7 +11,7 @@
             "64": "icons/icon.png"
         },
         "default_popup": "index.html",
-        "default_title": "Estimate your task",
+        "default_title": "Time Estimator",
         "browser_style": true
     },
     "commands": {

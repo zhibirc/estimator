@@ -1,7 +1,7 @@
 {
-    "name": "estimator",
-    "version": "0.0.4",
-    "description": "Estimate your tasks more precisely!",
+    "name": "time-estimator",
+    "version": "1.0.0",
+    "description": "Estimate time for your tasks more precisely!",
     "author": {
         "name": "Yaroslav Surilov",
         "email": ""
