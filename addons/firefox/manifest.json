@@ -1,1 +1,24 @@
-{}
+{
+    "manifest_version": 2,
+    "name": "estimator",
+    "description": "Estimate your tasks more precisely!",
+    "version": "1.0.0",
+    "icons": {
+        "64": "icons/icon.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "64": "icons/icon.png"
+        },
+        "default_popup": "index.html",
+        "default_title": "Estimate your task",
+        "browser_style": true
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Alt+Shift+E"
+            }
+        }
+    }
+}
