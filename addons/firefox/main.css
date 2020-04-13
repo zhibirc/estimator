@@ -39,3 +39,11 @@ button {
 .help-tooltip {
     font-weight: bold;
 }
+
+input + span {
+    /* todo */
+}
+
+.invalid {
+
+}
