@@ -4,6 +4,8 @@
  * @module
  */
 
+'use strict';
+
 const getElement     = document.getElementById.bind(document);
 const estimateButton = getElement('estimate');
 const result         = getElement('result');
