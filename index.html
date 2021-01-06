@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Estimate your task</title>
-    <link rel="stylesheet" href="src/css/main.css">
-</head>
-<body>
-<div class="columns">
-    <div class="column"></div>
-    <div class="column is-half">
-        <div class="field">
-            <label class="label" for="optimistic-mark">Optimistic mark:</label>
-            <div class="control">
-                <input class="input is-large is-success" id="optimistic-mark" placeholder="enter value...">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Time Estimator</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="field">
+                <label for="optimistic-mark">Optimistic mark:</label>
+                <i class="help-tooltip" title="Specify the minimum time for task solving. Optimistic value cannot be greater than normal or pessimistic estimation."></i>
+                <div class="control">
+                    <input type="number" min="0" placeholder="Enter value" id="optimistic-mark" required>
+                </div>
             </div>
+
+            <div class="field">
+                <label for="normal-mark">Normal mark:</label>
+                <i class="help-tooltip" title="Specify the average/normal time for task solving. It cannot be less than optimistic and greater than pessimistic estimation."></i>
+                <div class="control">
+                    <input type="number" min="0" placeholder="Enter value" id="normal-mark" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="pessimistic-mark">Pessimistic mark:</label>
+                <i class="help-tooltip" title="Specify the maximum time for task solving (upper boundary). Pessimistic value cannot be less than normal or optimistic estimation."></i>
+                <div class="control">
+                    <input type="number" min="0" placeholder="Enter value" id="pessimistic-mark" required>
+                </div>
+            </div>
+
+            <button id="estimate">Estimate!</button>
+            <span id="result"></span>
         </div>
 
-        <div class="field">
-            <label class="label" for="normal-mark">Normal mark:</label>
-            <div class="control">
-                <input class="input is-large is-warning" id="normal-mark" placeholder="enter value...">
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label" for="pessimistic-mark">Pessimistic mark:</label>
-            <div class="control">
-                <input class="input is-large is-danger" id="pessimistic-mark" placeholder="enter value...">
-            </div>
-        </div>
-
-        <button class="button is-large is-primary" id="estimate">Estimate!</button>
-        <div id="result"></div>
-    </div>
-    <div class="column"></div>
-</div>
-
-<script src="src/js/main.js"></script>
-</body>
+    <script src="./main.js"></script>
+    </body>
 </html>
